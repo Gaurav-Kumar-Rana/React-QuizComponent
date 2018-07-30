@@ -13,10 +13,10 @@ class Quiz extends Component {
     }
   }
   render(){
-    const isQuizEnd = 0;
+    const isQuizEnd = true;
     return(
       <div>
-        <QuizEnd className={this.state.isQuizEnd?'hide':'show'} />
+        <QuizEnd style={isQuizEnd?{display:'block'}:{display:'none'}} />
         <QuizQuestion quiz_question={quizData.quiz_questions[this.state.quiz_position - 1]}/>
       </div>
       )
