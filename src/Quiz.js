@@ -15,7 +15,8 @@ class Quiz extends Component {
   }
   render(){
     return(
-      <div className={this.state.isQuizEnd?'hide':'show'} >
+      <div>
+        <QuizEnd className={this.state.isQuizEnd?'hide':'show'} />
         <QuizQuestion quiz_question={quizData.quiz_questions[this.state.quiz_position - 1]}/>
       </div>
       )
