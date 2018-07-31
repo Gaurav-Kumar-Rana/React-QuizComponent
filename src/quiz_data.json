@@ -8,9 +8,28 @@
     },
     {
       "id": 2,
-      "instruction_text": "What's your favorite number?",
-      "answer_options": ["1", "2", "3", "4"],
-      "answer": "4"
+      "instruction_text": "which celestial body that revolves around a star?",
+      "answer_options": ["Planet", "Moon", "Meteoroids", "Satellite"],
+      "answer": "Planet"
+    },
+    {
+      "id": 3,
+      "instruction_text": "How many oceans in the world?",
+      "answer_options": ["4", "6", "3", "5"],
+      "answer": "5"
+    },
+    {
+      "id": 4,
+      "instruction_text": "Who is the first president of india?",
+      "answer_options": ["Mahatma Gandhi", "Rajendra Prasad", "Jawaharlal Nehru", "None of them"],
+      "answer": "Rajendra Prasad"
+    }
+    ,
+    {
+      "id": 5,
+      "instruction_text": "How many planets in our solar system ?",
+      "answer_options": ["7", "8", "9", "10"],
+      "answer": "8"
     }
   ]
 }
