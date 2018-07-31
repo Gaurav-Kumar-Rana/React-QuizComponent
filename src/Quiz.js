@@ -13,7 +13,7 @@ class Quiz extends Component {
     }
   }
   render(){
-    const isQuizEnd = false;
+    const isQuizEnd = true;
     var QuizConst = isQuizEnd ? <QuizEnd isQuizEnd={!isQuizEnd} /> : <QuizQuestion isQuizEnd={isQuizEnd} quiz_question={quizData.quiz_questions[this.state.quiz_position - 1]}/>
     return(
       <div>
