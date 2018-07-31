@@ -8,15 +8,14 @@ class Quiz extends Component {
   constructor(props){
     super(props);
     this.state = {
-      quiz_position:quizData.quiz_questions.length - 1,
-      
+      quiz_position:1,      
     }
   }
   render(){
-     const isQuizEnd = this.state.quiz_position  === quizData.quiz_questions.length - 1 ? true:false;
+     const isQuizEnd = this.state.quiz_position - 1 === quizData.quiz_questions.length ? true:false;
     return(
       <div>
-          {isQuizEnd ? <QuizEnd isQuizEnd={!isQuizEnd} /> : <QuizQuestion isQuizEnd={isQuizEnd} quiz_question={quizData.quiz_questions[this.state.quiz_position - 1]}/> }
+          {isQuizEnd ? <QuizEnd /> : <QuizQuestion quiz_question={quizData.quiz_questions[this.state.quiz_position - 1]}/> }
       </div>
       )
   }
